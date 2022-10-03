@@ -6,5 +6,5 @@ interface ButtonContainerProps {
 }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
-    background-color: ${(props) => props.theme.primary}
+    background-color: ${({ theme, variant }) => theme[variant]}
 `
